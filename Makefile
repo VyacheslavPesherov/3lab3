@@ -16,7 +16,7 @@ hello.o: hello.cpp
 clean:
 	rm -rf *.o hello
 
-print: ./bin/hello
+print: hello
 	ls -l ./bin && git describe --tags >> README.md
 
 
