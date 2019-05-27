@@ -1,7 +1,7 @@
 all: hello
 
 hello: main.o factorial.o hello.o
-	g++ main.o factorial.o hello.o -o ./bin/hello
+	g++ -Wall main.o factorial.o hello.o hello.cpp
 
 main.o: main.cpp
 	g++ -c main.cpp
@@ -15,13 +15,4 @@ hello.o: hello.cpp
 
 clean:
 	rm -rf *.o hello
-
-print: hello
-	ls -l ./bin && git describe --tags >> README.md
-
-
-copy: README.md
-	cp README.md ./bin/README.md
-
-
 
