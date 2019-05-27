@@ -1,4 +1,6 @@
 #include <iostream>
+#include "hello.cpp"
+#include "factorial.cpp"
 #include "functions.h"
 
 using namespace std;
