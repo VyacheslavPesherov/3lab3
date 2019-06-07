@@ -25,6 +25,6 @@ deploy:
   target-branch: gh-pages
   skip_cleanup: true
   on:
-    tags: true
+    #tags: true
     branch: master
 
